@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5b647258dd5797469bc4c10a"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 0
+      }
+    }
+  ],
+  "response": {
+    "checkins": {
+      "count": 1,
+      "items": [
+        {
+          "id": "5b6470db780eee002c9f9d1b",
+          "createdAt": 1533309147,
+          "type": "checkin",
+          "timeZoneOffset": 180,
+          "editableUntil": 1533395547000,
+          "venue": {
+            "id": "5b646dff175562002c09f158",
+            "name": "Test Venue",
+            "contact": {},
+            "location": {
+              "lat": 44.3,
+              "lng": 37.2,
+              "labeledLatLngs": [
+                {
+                  "label": "display",
+                  "lat": 44.3,
+                  "lng": 37.2
+                }
+              ],
+              "cc": "RU",
+              "country": "Russia"
+            },
+            "categories": [],
+            "verified": false,
+            "stats": {
+              "tipCount": 0,
+              "usersCount": 0,
+              "checkinsCount": 0,
+              "visitsCount": 0
+            },
+            "beenHere": {
+              "count": 0,
+              "lastCheckinExpiredAt": 0,
+              "marked": false,
+              "unconfirmedCount": 0
+            }
+          },
+          "likes": {
+            "count": 0,
+            "groups": []
+          },
+          "like": false,
+          "isMayor": false,
+          "photos": {
+            "count": 0,
+            "items": []
+          },
+          "posts": {
+            "count": 0,
+            "textCount": 0
+          },
+          "comments": {
+            "count": 0
+          },
+          "source": {
+            "name": "Test",
+            "url": "http:\/\/google.com"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3561 @@
+venues/search Response Example
+You can use it for development and debugging
+Actual format at August, 2018
+
+var_dump for
+$params = [
+    "ll" => "44.3,37.2",
+    "near" => "Chicago, IL",
+];
+$response = $foursquare->GetPrivate("venues/search", $params, true);
+
+===============
+
+object(stdClass)#33 (3) {
+  ["meta"]=>
+  object(stdClass)#32 (2) {
+    ["code"]=>
+    int(200)
+    ["requestId"]=>
+    string(24) "5b645fa54c1f677af1c43464"
+  }
+  ["notifications"]=>
+  array(1) {
+    [0]=>
+    object(stdClass)#34 (2) {
+      ["type"]=>
+      string(16) "notificationTray"
+      ["item"]=>
+      object(stdClass)#35 (1) {
+        ["unreadCount"]=>
+        int(0)
+      }
+    }
+  }
+  ["response"]=>
+  object(stdClass)#307 (3) {
+    ["venues"]=>
+    array(30) {
+      [0]=>
+      object(stdClass)#36 (12) {
+        ["id"]=>
+        string(24) "58087539d67c9dc770be5d63"
+        ["name"]=>
+        string(25) "High Concept Laboratories"
+        ["contact"]=>
+        object(stdClass)#37 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#38 (9) {
+          ["lat"]=>
+          float(41.85003)
+          ["lng"]=>
+          float(-87.65005)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#39 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.85003)
+              ["lng"]=>
+              float(-87.65005)
+            }
+          }
+          ["distance"]=>
+          int(8985183)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#40 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e5931735"
+            ["name"]=>
+            string(11) "Music Venue"
+            ["pluralName"]=>
+            string(12) "Music Venues"
+            ["shortName"]=>
+            string(11) "Music Venue"
+            ["icon"]=>
+            object(stdClass)#41 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#42 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#43 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#44 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [1]=>
+      object(stdClass)#45 (12) {
+        ["id"]=>
+        string(24) "583940f05da8f469b02a648a"
+        ["name"]=>
+        string(13) "Shubas Tavern"
+        ["contact"]=>
+        object(stdClass)#46 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#47 (9) {
+          ["lat"]=>
+          float(41.85003)
+          ["lng"]=>
+          float(-87.65005)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#48 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.85003)
+              ["lng"]=>
+              float(-87.65005)
+            }
+          }
+          ["distance"]=>
+          int(8985183)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#49 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e5931735"
+            ["name"]=>
+            string(11) "Music Venue"
+            ["pluralName"]=>
+            string(12) "Music Venues"
+            ["shortName"]=>
+            string(11) "Music Venue"
+            ["icon"]=>
+            object(stdClass)#50 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#51 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#52 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#53 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [2]=>
+      object(stdClass)#54 (12) {
+        ["id"]=>
+        string(24) "57fde91f498e1f97f27e74eb"
+        ["name"]=>
+        string(16) "Live Wire Lounge"
+        ["contact"]=>
+        object(stdClass)#55 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#56 (9) {
+          ["lat"]=>
+          float(41.85003)
+          ["lng"]=>
+          float(-87.65005)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#57 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.85003)
+              ["lng"]=>
+              float(-87.65005)
+            }
+          }
+          ["distance"]=>
+          int(8985183)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#58 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e5931735"
+            ["name"]=>
+            string(11) "Music Venue"
+            ["pluralName"]=>
+            string(12) "Music Venues"
+            ["shortName"]=>
+            string(11) "Music Venue"
+            ["icon"]=>
+            object(stdClass)#59 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#60 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#61 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#62 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [3]=>
+      object(stdClass)#63 (12) {
+        ["id"]=>
+        string(24) "55356320498eb65835b26b0b"
+        ["name"]=>
+        string(26) "South Side Smoke Shop Stop"
+        ["contact"]=>
+        object(stdClass)#64 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#65 (9) {
+          ["lat"]=>
+          float(41.849632153162)
+          ["lng"]=>
+          float(-87.65115737915)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#66 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.849632153162)
+              ["lng"]=>
+              float(-87.65115737915)
+            }
+          }
+          ["distance"]=>
+          int(8985273)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#67 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1ff941735"
+            ["name"]=>
+            string(18) "Miscellaneous Shop"
+            ["pluralName"]=>
+            string(19) "Miscellaneous Shops"
+            ["shortName"]=>
+            string(4) "Shop"
+            ["icon"]=>
+            object(stdClass)#68 (2) {
+              ["prefix"]=>
+              string(53) "https://ss3.4sqi.net/img/categories_v2/shops/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#69 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#70 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#71 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [4]=>
+      object(stdClass)#72 (12) {
+        ["id"]=>
+        string(24) "51953691498e3a9d5a7e292c"
+        ["name"]=>
+        string(4) "HCSC"
+        ["contact"]=>
+        object(stdClass)#73 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#74 (9) {
+          ["lat"]=>
+          float(41.850207)
+          ["lng"]=>
+          float(-87.647891)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#75 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.850207)
+              ["lng"]=>
+              float(-87.647891)
+            }
+          }
+          ["distance"]=>
+          int(8985060)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#76 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d130941735"
+            ["name"]=>
+            string(8) "Building"
+            ["pluralName"]=>
+            string(9) "Buildings"
+            ["shortName"]=>
+            string(8) "Building"
+            ["icon"]=>
+            object(stdClass)#77 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#78 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#79 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#80 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [5]=>
+      object(stdClass)#81 (12) {
+        ["id"]=>
+        string(24) "555f7b95498e2f2bd6859b71"
+        ["name"]=>
+        string(29) "Chicago Helicopter Experience"
+        ["contact"]=>
+        object(stdClass)#82 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#83 (11) {
+          ["address"]=>
+          string(17) "2420 S Halsted St"
+          ["lat"]=>
+          float(41.848411391126)
+          ["lng"]=>
+          float(-87.647550901563)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#84 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.848411391126)
+              ["lng"]=>
+              float(-87.647550901563)
+            }
+          }
+          ["distance"]=>
+          int(8985204)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(17) "2420 S Halsted St"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#85 (6) {
+            ["id"]=>
+            string(24) "56aa371ce4b08b9a8d57356e"
+            ["name"]=>
+            string(8) "Heliport"
+            ["pluralName"]=>
+            string(9) "Heliports"
+            ["shortName"]=>
+            string(8) "Heliport"
+            ["icon"]=>
+            object(stdClass)#86 (2) {
+              ["prefix"]=>
+              string(54) "https://ss3.4sqi.net/img/categories_v2/travel/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#87 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#88 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#89 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [6]=>
+      object(stdClass)#90 (12) {
+        ["id"]=>
+        string(24) "510d354ce4b0eaed1712b7a4"
+        ["name"]=>
+        string(21) "M'bellish hair studio"
+        ["contact"]=>
+        object(stdClass)#91 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#92 (10) {
+          ["lat"]=>
+          float(41.849857330322)
+          ["lng"]=>
+          float(-87.647262573242)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#93 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.849857330322)
+              ["lng"]=>
+              float(-87.647262573242)
+            }
+          }
+          ["distance"]=>
+          int(8985061)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60608"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#94 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d130941735"
+            ["name"]=>
+            string(8) "Building"
+            ["pluralName"]=>
+            string(9) "Buildings"
+            ["shortName"]=>
+            string(8) "Building"
+            ["icon"]=>
+            object(stdClass)#95 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#96 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#97 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#98 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [7]=>
+      object(stdClass)#99 (12) {
+        ["id"]=>
+        string(24) "4c226f39aa8e9c742e77f4d4"
+        ["name"]=>
+        string(12) "Café Prague"
+        ["contact"]=>
+        object(stdClass)#100 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#101 (12) {
+          ["address"]=>
+          string(18) "6710 W Belmont Ave"
+          ["crossStreet"]=>
+          string(19) "at N Rutherford Ave"
+          ["lat"]=>
+          float(41.938280112849)
+          ["lng"]=>
+          float(-87.793864622938)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#102 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.938280112849)
+              ["lng"]=>
+              float(-87.793864622938)
+            }
+          }
+          ["distance"]=>
+          int(8984370)
+          ["postalCode"]=>
+          string(5) "60634"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(40) "6710 W Belmont Ave (at N Rutherford Ave)"
+            [1]=>
+            string(17) "Chicago, IL 60634"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#103 (6) {
+            ["id"]=>
+            string(24) "52f2ae52bcbc57f1066b8b81"
+            ["name"]=>
+            string(16) "Czech Restaurant"
+            ["pluralName"]=>
+            string(17) "Czech Restaurants"
+            ["shortName"]=>
+            string(5) "Czech"
+            ["icon"]=>
+            object(stdClass)#104 (2) {
+              ["prefix"]=>
+              string(52) "https://ss3.4sqi.net/img/categories_v2/food/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#105 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#106 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#107 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [8]=>
+      object(stdClass)#108 (12) {
+        ["id"]=>
+        string(24) "4e18893ab0fb8567c66d7e69"
+        ["name"]=>
+        string(30) "Ving Tsun Self Defense Academy"
+        ["contact"]=>
+        object(stdClass)#109 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#110 (11) {
+          ["address"]=>
+          string(21) "500 w creak suite 528"
+          ["lat"]=>
+          float(41.8478247)
+          ["lng"]=>
+          float(-87.6475323)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#111 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.8478247)
+              ["lng"]=>
+              float(-87.6475323)
+            }
+          }
+          ["distance"]=>
+          int(8985256)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(21) "500 w creak suite 528"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#112 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1ae941735"
+            ["name"]=>
+            string(10) "University"
+            ["pluralName"]=>
+            string(12) "Universities"
+            ["shortName"]=>
+            string(10) "University"
+            ["icon"]=>
+            object(stdClass)#113 (2) {
+              ["prefix"]=>
+              string(57) "https://ss3.4sqi.net/img/categories_v2/education/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#114 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#115 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#116 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [9]=>
+      object(stdClass)#117 (12) {
+        ["id"]=>
+        string(24) "4ece63df0e61efa32eb617c2"
+        ["name"]=>
+        string(27) "Inside The Train At halsted"
+        ["contact"]=>
+        object(stdClass)#118 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#119 (10) {
+          ["lat"]=>
+          float(41.848038239057)
+          ["lng"]=>
+          float(-87.645783122346)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#120 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.848038239057)
+              ["lng"]=>
+              float(-87.645783122346)
+            }
+          }
+          ["distance"]=>
+          int(8985150)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60608"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#121 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1fc931735"
+            ["name"]=>
+            string(18) "Light Rail Station"
+            ["pluralName"]=>
+            string(19) "Light Rail Stations"
+            ["shortName"]=>
+            string(10) "Light Rail"
+            ["icon"]=>
+            object(stdClass)#122 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/travel/lightrail_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#123 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#124 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#125 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [10]=>
+      object(stdClass)#126 (12) {
+        ["id"]=>
+        string(24) "4cd2f646f4bfb1f73cdb382f"
+        ["name"]=>
+        string(14) "Child Link Inc"
+        ["contact"]=>
+        object(stdClass)#127 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#128 (11) {
+          ["address"]=>
+          string(25) "1100 W Cermak Rd Ste B404"
+          ["lat"]=>
+          float(41.852478001645)
+          ["lng"]=>
+          float(-87.653129914571)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#129 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.852478001645)
+              ["lng"]=>
+              float(-87.653129914571)
+            }
+          }
+          ["distance"]=>
+          int(8985116)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(25) "1100 W Cermak Rd Ste B404"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#130 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d130941735"
+            ["name"]=>
+            string(8) "Building"
+            ["pluralName"]=>
+            string(9) "Buildings"
+            ["shortName"]=>
+            string(8) "Building"
+            ["icon"]=>
+            object(stdClass)#131 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#132 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#133 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#134 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [11]=>
+      object(stdClass)#135 (12) {
+        ["id"]=>
+        string(24) "4b761349f964a520fb3a2ee3"
+        ["name"]=>
+        string(32) "Chicago Urban Art Society (CUAS)"
+        ["contact"]=>
+        object(stdClass)#136 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#137 (12) {
+          ["address"]=>
+          string(17) "2229 S Halsted St"
+          ["crossStreet"]=>
+          string(18) "at W. Cullerton St"
+          ["lat"]=>
+          float(41.852831774397)
+          ["lng"]=>
+          float(-87.641986414729)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#138 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.852831774397)
+              ["lng"]=>
+              float(-87.641986414729)
+            }
+          }
+          ["distance"]=>
+          int(8984534)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(38) "2229 S Halsted St (at W. Cullerton St)"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#139 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e2931735"
+            ["name"]=>
+            string(11) "Art Gallery"
+            ["pluralName"]=>
+            string(13) "Art Galleries"
+            ["shortName"]=>
+            string(11) "Art Gallery"
+            ["icon"]=>
+            object(stdClass)#140 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/artgallery_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#141 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#142 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#143 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [12]=>
+      object(stdClass)#144 (12) {
+        ["id"]=>
+        string(24) "53e05905498ecd25b9e6b423"
+        ["name"]=>
+        string(10) "2500 South"
+        ["contact"]=>
+        object(stdClass)#145 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#146 (12) {
+          ["address"]=>
+          string(17) "2500 S Halsted St"
+          ["crossStreet"]=>
+          string(16) "Archer & Halsted"
+          ["lat"]=>
+          float(41.847076028802)
+          ["lng"]=>
+          float(-87.646867149685)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#147 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.847076028802)
+              ["lng"]=>
+              float(-87.646867149685)
+            }
+          }
+          ["distance"]=>
+          int(8985290)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(36) "2500 S Halsted St (Archer & Halsted)"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#148 (6) {
+            ["id"]=>
+            string(24) "4d954b06a243a5684965b473"
+            ["name"]=>
+            string(40) "Residential Building (Apartment / Condo)"
+            ["pluralName"]=>
+            string(43) "Residential Buildings (Apartments / Condos)"
+            ["shortName"]=>
+            string(11) "Residential"
+            ["icon"]=>
+            object(stdClass)#149 (2) {
+              ["prefix"]=>
+              string(58) "https://ss3.4sqi.net/img/categories_v2/building/apartment_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#150 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#151 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#152 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [13]=>
+      object(stdClass)#153 (12) {
+        ["id"]=>
+        string(24) "54b887d2498efb92434dce29"
+        ["name"]=>
+        string(21) "Downtown Dogs Chicago"
+        ["contact"]=>
+        object(stdClass)#154 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#155 (12) {
+          ["address"]=>
+          string(17) "2440 W Hubbard St"
+          ["crossStreet"]=>
+          string(1) "1"
+          ["lat"]=>
+          float(41.849592193688)
+          ["lng"]=>
+          float(-87.646919488907)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#156 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.849592193688)
+              ["lng"]=>
+              float(-87.646919488907)
+            }
+          }
+          ["distance"]=>
+          int(8985067)
+          ["postalCode"]=>
+          string(5) "60612"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(21) "2440 W Hubbard St (1)"
+            [1]=>
+            string(17) "Chicago, IL 60612"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#157 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e5941735"
+            ["name"]=>
+            string(7) "Dog Run"
+            ["pluralName"]=>
+            string(8) "Dog Runs"
+            ["shortName"]=>
+            string(7) "Dog Run"
+            ["icon"]=>
+            object(stdClass)#158 (2) {
+              ["prefix"]=>
+              string(61) "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/dogrun_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#159 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#160 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#161 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [14]=>
+      object(stdClass)#162 (12) {
+        ["id"]=>
+        string(24) "4ed3f69d7ee5be844f4b0ba0"
+        ["name"]=>
+        string(11) "Cathay Bank"
+        ["contact"]=>
+        object(stdClass)#163 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#164 (10) {
+          ["lat"]=>
+          float(41.851053064806)
+          ["lng"]=>
+          float(-87.644540072643)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#165 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.851053064806)
+              ["lng"]=>
+              float(-87.644540072643)
+            }
+          }
+          ["distance"]=>
+          int(8984819)
+          ["postalCode"]=>
+          string(5) "60616"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60616"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#166 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d10a951735"
+            ["name"]=>
+            string(4) "Bank"
+            ["pluralName"]=>
+            string(5) "Banks"
+            ["shortName"]=>
+            string(4) "Bank"
+            ["icon"]=>
+            object(stdClass)#167 (2) {
+              ["prefix"]=>
+              string(55) "https://ss3.4sqi.net/img/categories_v2/shops/financial_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#168 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#169 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#170 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [15]=>
+      object(stdClass)#171 (12) {
+        ["id"]=>
+        string(24) "4c8e17b6d2aea093771ccb69"
+        ["name"]=>
+        string(29) "Midwest Generation Fisk Plant"
+        ["contact"]=>
+        object(stdClass)#172 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#173 (10) {
+          ["lat"]=>
+          float(41.850382595598)
+          ["lng"]=>
+          float(-87.654049986827)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#174 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.850382595598)
+              ["lng"]=>
+              float(-87.654049986827)
+            }
+          }
+          ["distance"]=>
+          int(8985349)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60608"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#175 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d130941735"
+            ["name"]=>
+            string(8) "Building"
+            ["pluralName"]=>
+            string(9) "Buildings"
+            ["shortName"]=>
+            string(8) "Building"
+            ["icon"]=>
+            object(stdClass)#176 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#177 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#178 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#179 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [16]=>
+      object(stdClass)#180 (12) {
+        ["id"]=>
+        string(24) "4b394985f964a520e45925e3"
+        ["name"]=>
+        string(15) "Archer Cleaners"
+        ["contact"]=>
+        object(stdClass)#181 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#182 (11) {
+          ["address"]=>
+          string(17) "2556 S Archer Ave"
+          ["lat"]=>
+          float(41.845994980087)
+          ["lng"]=>
+          float(-87.652940249392)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#183 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.845994980087)
+              ["lng"]=>
+              float(-87.652940249392)
+            }
+          }
+          ["distance"]=>
+          int(8985686)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(17) "2556 S Archer Ave"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#184 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1fc941735"
+            ["name"]=>
+            string(15) "Laundry Service"
+            ["pluralName"]=>
+            string(16) "Laundry Services"
+            ["shortName"]=>
+            string(7) "Laundry"
+            ["icon"]=>
+            object(stdClass)#185 (2) {
+              ["prefix"]=>
+              string(53) "https://ss3.4sqi.net/img/categories_v2/shops/laundry_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#186 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#187 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#188 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [17]=>
+      object(stdClass)#189 (12) {
+        ["id"]=>
+        string(24) "4ca7f08ea6e08cfa34548a94"
+        ["name"]=>
+        string(10) "Subhuman 2"
+        ["contact"]=>
+        object(stdClass)#190 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#191 (10) {
+          ["address"]=>
+          string(12) "2215 s Union"
+          ["lat"]=>
+          float(41.853391)
+          ["lng"]=>
+          float(-87.644852)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#192 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.853391)
+              ["lng"]=>
+              float(-87.644852)
+            }
+          }
+          ["distance"]=>
+          int(8984626)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(12) "2215 s Union"
+            [1]=>
+            string(11) "Chicago, IL"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#193 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e5931735"
+            ["name"]=>
+            string(11) "Music Venue"
+            ["pluralName"]=>
+            string(12) "Music Venues"
+            ["shortName"]=>
+            string(11) "Music Venue"
+            ["icon"]=>
+            object(stdClass)#194 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#195 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#196 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#197 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [18]=>
+      object(stdClass)#198 (12) {
+        ["id"]=>
+        string(24) "4ec2ea446c25adc5b2e376c9"
+        ["name"]=>
+        string(21) "Alivio Medical Center"
+        ["contact"]=>
+        object(stdClass)#199 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#200 (10) {
+          ["lat"]=>
+          float(41.852433085442)
+          ["lng"]=>
+          float(-87.643400430679)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#201 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.852433085442)
+              ["lng"]=>
+              float(-87.643400430679)
+            }
+          }
+          ["distance"]=>
+          int(8984640)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60608"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#202 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d104941735"
+            ["name"]=>
+            string(14) "Medical Center"
+            ["pluralName"]=>
+            string(15) "Medical Centers"
+            ["shortName"]=>
+            string(7) "Medical"
+            ["icon"]=>
+            object(stdClass)#203 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/medical_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#204 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#205 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#206 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [19]=>
+      object(stdClass)#207 (12) {
+        ["id"]=>
+        string(24) "51d31e46498ed9496b8073f7"
+        ["name"]=>
+        string(11) "The 9 to 5!"
+        ["contact"]=>
+        object(stdClass)#208 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#209 (9) {
+          ["lat"]=>
+          float(41.8525258838)
+          ["lng"]=>
+          float(-87.649478345378)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#210 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.8525258838)
+              ["lng"]=>
+              float(-87.649478345378)
+            }
+          }
+          ["distance"]=>
+          int(8984931)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#211 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d174941735"
+            ["name"]=>
+            string(15) "Coworking Space"
+            ["pluralName"]=>
+            string(16) "Coworking Spaces"
+            ["shortName"]=>
+            string(15) "Coworking Space"
+            ["icon"]=>
+            object(stdClass)#212 (2) {
+              ["prefix"]=>
+              string(70) "https://ss3.4sqi.net/img/categories_v2/building/office_coworkingspace_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#213 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#214 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#215 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [20]=>
+      object(stdClass)#216 (12) {
+        ["id"]=>
+        string(24) "4c63184fec94a5938def2aca"
+        ["name"]=>
+        string(22) "Collection Art Gallery"
+        ["contact"]=>
+        object(stdClass)#217 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#218 (10) {
+          ["lat"]=>
+          float(41.85325293846)
+          ["lng"]=>
+          float(-87.64676597489)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#219 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.85325293846)
+              ["lng"]=>
+              float(-87.64676597489)
+            }
+          }
+          ["distance"]=>
+          int(8984732)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(17) "Chicago, IL 60608"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#220 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1e2931735"
+            ["name"]=>
+            string(11) "Art Gallery"
+            ["pluralName"]=>
+            string(13) "Art Galleries"
+            ["shortName"]=>
+            string(11) "Art Gallery"
+            ["icon"]=>
+            object(stdClass)#221 (2) {
+              ["prefix"]=>
+              string(69) "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/artgallery_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#222 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#223 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#224 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [21]=>
+      object(stdClass)#225 (12) {
+        ["id"]=>
+        string(24) "5949471342d8c2427002f1b1"
+        ["name"]=>
+        string(14) "Meade Electric"
+        ["contact"]=>
+        object(stdClass)#226 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#227 (11) {
+          ["address"]=>
+          string(15) "977 W Cermak Rd"
+          ["lat"]=>
+          float(41.852204)
+          ["lng"]=>
+          float(-87.650909)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#228 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.852204)
+              ["lng"]=>
+              float(-87.650909)
+            }
+          }
+          ["distance"]=>
+          int(8985031)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(15) "977 W Cermak Rd"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#229 (6) {
+            ["id"]=>
+            string(24) "56aa371be4b08b9a8d5734d7"
+            ["name"]=>
+            string(17) "Industrial Estate"
+            ["pluralName"]=>
+            string(18) "Industrial Estates"
+            ["shortName"]=>
+            string(17) "Industrial Estate"
+            ["icon"]=>
+            object(stdClass)#230 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#231 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#232 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#233 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [22]=>
+      object(stdClass)#234 (12) {
+        ["id"]=>
+        string(24) "51d9b3e5454a62dff563c0dc"
+        ["name"]=>
+        string(34) "Halsted Street South Branch Bridge"
+        ["contact"]=>
+        object(stdClass)#235 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#236 (11) {
+          ["address"]=>
+          string(24) "2340-80 S Halsted Street"
+          ["lat"]=>
+          float(41.849320468608)
+          ["lng"]=>
+          float(-87.646490335464)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#237 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.849320468608)
+              ["lng"]=>
+              float(-87.646490335464)
+            }
+          }
+          ["distance"]=>
+          int(8985071)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(24) "2340-80 S Halsted Street"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#238 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1df941735"
+            ["name"]=>
+            string(6) "Bridge"
+            ["pluralName"]=>
+            string(7) "Bridges"
+            ["shortName"]=>
+            string(6) "Bridge"
+            ["icon"]=>
+            object(stdClass)#239 (2) {
+              ["prefix"]=>
+              string(61) "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/bridge_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#240 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#241 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#242 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [23]=>
+      object(stdClass)#243 (12) {
+        ["id"]=>
+        string(24) "4ba2a35bf964a520920b38e3"
+        ["name"]=>
+        string(10) "CTA Bus 62"
+        ["contact"]=>
+        object(stdClass)#244 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#245 (11) {
+          ["crossStreet"]=>
+          string(6) "Archer"
+          ["lat"]=>
+          float(41.84597588723)
+          ["lng"]=>
+          float(-87.652938041044)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#246 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.84597588723)
+              ["lng"]=>
+              float(-87.652938041044)
+            }
+          }
+          ["distance"]=>
+          int(8985688)
+          ["postalCode"]=>
+          string(5) "60632"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(6) "Archer"
+            [1]=>
+            string(17) "Chicago, IL 60632"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#247 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d12b951735"
+            ["name"]=>
+            string(8) "Bus Line"
+            ["pluralName"]=>
+            string(9) "Bus Lines"
+            ["shortName"]=>
+            string(3) "Bus"
+            ["icon"]=>
+            object(stdClass)#248 (2) {
+              ["prefix"]=>
+              string(57) "https://ss3.4sqi.net/img/categories_v2/travel/busstation_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#249 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#250 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#251 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [24]=>
+      object(stdClass)#252 (12) {
+        ["id"]=>
+        string(24) "4b7a0419f964a520371f2fe3"
+        ["name"]=>
+        string(9) "CTA Bus 8"
+        ["contact"]=>
+        object(stdClass)#253 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#254 (11) {
+          ["crossStreet"]=>
+          string(7) "Halsted"
+          ["lat"]=>
+          float(41.864789444733)
+          ["lng"]=>
+          float(-87.646992413407)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#255 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.864789444733)
+              ["lng"]=>
+              float(-87.646992413407)
+            }
+          }
+          ["distance"]=>
+          int(8983712)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(7) "Halsted"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#256 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d12b951735"
+            ["name"]=>
+            string(8) "Bus Line"
+            ["pluralName"]=>
+            string(9) "Bus Lines"
+            ["shortName"]=>
+            string(3) "Bus"
+            ["icon"]=>
+            object(stdClass)#257 (2) {
+              ["prefix"]=>
+              string(57) "https://ss3.4sqi.net/img/categories_v2/travel/busstation_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#258 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#259 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#260 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [25]=>
+      object(stdClass)#261 (13) {
+        ["id"]=>
+        string(24) "5552723a498ebba68dd7f289"
+        ["name"]=>
+        string(20) "Narrative Mercantile"
+        ["contact"]=>
+        object(stdClass)#262 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#263 (12) {
+          ["address"]=>
+          string(22) "2716 West North Avenue"
+          ["crossStreet"]=>
+          string(9) "Washtenaw"
+          ["lat"]=>
+          float(41.910394030499)
+          ["lng"]=>
+          float(-87.695376185948)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#264 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.910394030499)
+              ["lng"]=>
+              float(-87.695376185948)
+            }
+          }
+          ["distance"]=>
+          int(8982017)
+          ["postalCode"]=>
+          string(5) "60647"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(34) "2716 West North Avenue (Washtenaw)"
+            [1]=>
+            string(17) "Chicago, IL 60647"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#265 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d116951735"
+            ["name"]=>
+            string(12) "Antique Shop"
+            ["pluralName"]=>
+            string(13) "Antique Shops"
+            ["shortName"]=>
+            string(8) "Antiques"
+            ["icon"]=>
+            object(stdClass)#266 (2) {
+              ["prefix"]=>
+              string(53) "https://ss3.4sqi.net/img/categories_v2/shops/antique_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(true)
+        ["stats"]=>
+        object(stdClass)#267 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#268 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["venuePage"]=>
+        object(stdClass)#269 (1) {
+          ["id"]=>
+          string(9) "447687522"
+        }
+        ["hereNow"]=>
+        object(stdClass)#270 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [26]=>
+      object(stdClass)#271 (12) {
+        ["id"]=>
+        string(24) "5033a9dce4b002cea10a2d6e"
+        ["name"]=>
+        string(9) "SEIU HCII"
+        ["contact"]=>
+        object(stdClass)#272 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#273 (11) {
+          ["address"]=>
+          string(17) "2229 S Halsted St"
+          ["lat"]=>
+          float(41.851872056167)
+          ["lng"]=>
+          float(-87.646190988555)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#274 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.851872056167)
+              ["lng"]=>
+              float(-87.646190988555)
+            }
+          }
+          ["distance"]=>
+          int(8984828)
+          ["postalCode"]=>
+          string(5) "60608"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(17) "2229 S Halsted St"
+            [1]=>
+            string(17) "Chicago, IL 60608"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#275 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d130941735"
+            ["name"]=>
+            string(8) "Building"
+            ["pluralName"]=>
+            string(9) "Buildings"
+            ["shortName"]=>
+            string(8) "Building"
+            ["icon"]=>
+            object(stdClass)#276 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#277 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#278 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#279 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [27]=>
+      object(stdClass)#280 (12) {
+        ["id"]=>
+        string(24) "5724371e498efc35a43988c8"
+        ["name"]=>
+        string(6) "Truong"
+        ["contact"]=>
+        object(stdClass)#281 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#282 (10) {
+          ["address"]=>
+          string(16) "2300 S Halted St"
+          ["lat"]=>
+          float(41.851451)
+          ["lng"]=>
+          float(-87.646993)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#283 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.851451)
+              ["lng"]=>
+              float(-87.646993)
+            }
+          }
+          ["distance"]=>
+          int(8984905)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(16) "2300 S Halted St"
+            [1]=>
+            string(11) "Chicago, IL"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#284 (6) {
+            ["id"]=>
+            string(24) "52e81612bcbc57f1066b7a36"
+            ["name"]=>
+            string(9) "Warehouse"
+            ["pluralName"]=>
+            string(10) "Warehouses"
+            ["shortName"]=>
+            string(9) "Warehouse"
+            ["icon"]=>
+            object(stdClass)#285 (2) {
+              ["prefix"]=>
+              string(56) "https://ss3.4sqi.net/img/categories_v2/building/default_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#286 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#287 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#288 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [28]=>
+      object(stdClass)#289 (12) {
+        ["id"]=>
+        string(24) "4b80ab02f964a520e88430e3"
+        ["name"]=>
+        string(13) "Dunkin Donuts"
+        ["contact"]=>
+        object(stdClass)#290 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#291 (12) {
+          ["address"]=>
+          string(17) "2477 S Archer Ave"
+          ["crossStreet"]=>
+          string(10) "at Halsted"
+          ["lat"]=>
+          float(41.847076560709)
+          ["lng"]=>
+          float(-87.646112360664)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#292 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.847076560709)
+              ["lng"]=>
+              float(-87.646112360664)
+            }
+          }
+          ["distance"]=>
+          int(8985253)
+          ["postalCode"]=>
+          string(5) "60616"
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(3) {
+            [0]=>
+            string(30) "2477 S Archer Ave (at Halsted)"
+            [1]=>
+            string(17) "Chicago, IL 60616"
+            [2]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#293 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d148941735"
+            ["name"]=>
+            string(10) "Donut Shop"
+            ["pluralName"]=>
+            string(11) "Donut Shops"
+            ["shortName"]=>
+            string(6) "Donuts"
+            ["icon"]=>
+            object(stdClass)#294 (2) {
+              ["prefix"]=>
+              string(51) "https://ss3.4sqi.net/img/categories_v2/food/donuts_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(true)
+        ["stats"]=>
+        object(stdClass)#295 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#296 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#297 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+      [29]=>
+      object(stdClass)#298 (12) {
+        ["id"]=>
+        string(24) "537cffa0498ebe933016e86e"
+        ["name"]=>
+        string(20) "Allure Beauty Lounge"
+        ["contact"]=>
+        object(stdClass)#299 (0) {
+        }
+        ["location"]=>
+        object(stdClass)#300 (9) {
+          ["lat"]=>
+          float(41.853248596191)
+          ["lng"]=>
+          float(-87.650321960449)
+          ["labeledLatLngs"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#301 (3) {
+              ["label"]=>
+              string(7) "display"
+              ["lat"]=>
+              float(41.853248596191)
+              ["lng"]=>
+              float(-87.650321960449)
+            }
+          }
+          ["distance"]=>
+          int(8984908)
+          ["cc"]=>
+          string(2) "US"
+          ["city"]=>
+          string(7) "Chicago"
+          ["state"]=>
+          string(2) "IL"
+          ["country"]=>
+          string(13) "United States"
+          ["formattedAddress"]=>
+          array(2) {
+            [0]=>
+            string(11) "Chicago, IL"
+            [1]=>
+            string(13) "United States"
+          }
+        }
+        ["categories"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#302 (6) {
+            ["id"]=>
+            string(24) "4bf58dd8d48988d1ed941735"
+            ["name"]=>
+            string(3) "Spa"
+            ["pluralName"]=>
+            string(4) "Spas"
+            ["shortName"]=>
+            string(3) "Spa"
+            ["icon"]=>
+            object(stdClass)#303 (2) {
+              ["prefix"]=>
+              string(49) "https://ss3.4sqi.net/img/categories_v2/shops/spa_"
+              ["suffix"]=>
+              string(4) ".png"
+            }
+            ["primary"]=>
+            bool(true)
+          }
+        }
+        ["verified"]=>
+        bool(false)
+        ["stats"]=>
+        object(stdClass)#304 (4) {
+          ["tipCount"]=>
+          int(0)
+          ["usersCount"]=>
+          int(0)
+          ["checkinsCount"]=>
+          int(0)
+          ["visitsCount"]=>
+          int(0)
+        }
+        ["beenHere"]=>
+        object(stdClass)#305 (4) {
+          ["count"]=>
+          int(0)
+          ["lastCheckinExpiredAt"]=>
+          int(0)
+          ["marked"]=>
+          bool(false)
+          ["unconfirmedCount"]=>
+          int(0)
+        }
+        ["hereNow"]=>
+        object(stdClass)#306 (3) {
+          ["count"]=>
+          int(0)
+          ["summary"]=>
+          string(11) "Nobody here"
+          ["groups"]=>
+          array(0) {
+          }
+        }
+        ["referralId"]=>
+        string(12) "v-1533304741"
+        ["venueChains"]=>
+        array(0) {
+        }
+        ["hasPerk"]=>
+        bool(false)
+      }
+    }
+    ["confident"]=>
+    bool(true)
+    ["geocode"]=>
+    object(stdClass)#308 (4) {
+      ["what"]=>
+      string(0) ""
+      ["where"]=>
+      string(10) "chicago il"
+      ["feature"]=>
+      object(stdClass)#309 (10) {
+        ["cc"]=>
+        string(2) "US"
+        ["name"]=>
+        string(7) "Chicago"
+        ["displayName"]=>
+        string(26) "Chicago, IL, United States"
+        ["matchedName"]=>
+        string(26) "Chicago, IL, United States"
+        ["highlightedName"]=>
+        string(40) "<b>Chicago</b>, <b>IL</b>, United States"
+        ["woeType"]=>
+        int(7)
+        ["slug"]=>
+        string(16) "chicago-illinois"
+        ["id"]=>
+        string(17) "geonameid:4887398"
+        ["longId"]=>
+        string(17) "72057594042815334"
+        ["geometry"]=>
+        object(stdClass)#311 (2) {
+          ["center"]=>
+          object(stdClass)#310 (2) {
+            ["lat"]=>
+            float(41.85003)
+            ["lng"]=>
+            float(-87.65005)
+          }
+          ["bounds"]=>
+          object(stdClass)#313 (2) {
+            ["ne"]=>
+            object(stdClass)#312 (2) {
+              ["lat"]=>
+              float(42.023135)
+              ["lng"]=>
+              float(-87.523661)
+            }
+            ["sw"]=>
+            object(stdClass)#314 (2) {
+              ["lat"]=>
+              float(41.644286)
+              ["lng"]=>
+              float(-87.940101)
+            }
+          }
+        }
+      }
+      ["parents"]=>
+      array(0) {
+      }
+    }
+  }
+}
+object(stdClass)#308 (3) {
+  ["meta"]=>
+  object(stdClass)#307 (2) {
+    ["code"]=>
+    int(200)
+    ["requestId"]=>
+    string(24) "5b645fa54c1f677b0b8ef987"
+  }
+  ["notifications"]=>
+  array(1) {
+    [0]=>
+    object(stdClass)#309 (2) {
+      ["type"]=>
+      string(16) "notificationTray"
+      ["item"]=>
+      object(stdClass)#311 (1) {
+        ["unreadCount"]=>
+        int(0)
+      }
+    }
+  }
+  ["response"]=>
+  object(stdClass)#314 (1) {
+    ["checkins"]=>
+    object(stdClass)#313 (2) {
+      ["count"]=>
+      int(0)
+      ["items"]=>
+      array(0) {
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+object(stdClass)#33 (3) {
+  ["meta"]=>
+  object(stdClass)#32 (2) {
+    ["code"]=>
+    int(200)
+    ["requestId"]=>
+    string(24) "5b642e68351e3d7b40510078"
+  }
+  ["notifications"]=>
+  array(1) {
+    [0]=>
+    object(stdClass)#34 (2) {
+      ["type"]=>
+      string(16) "notificationTray"
+      ["item"]=>
+      object(stdClass)#35 (1) {
+        ["unreadCount"]=>
+        int(0)
+      }
+    }
+  }
+  ["response"]=>
+  object(stdClass)#37 (1) {
+    ["checkins"]=>
+    object(stdClass)#36 (2) {
+      ["count"]=>
+      int(0)
+      ["items"]=>
+      array(0) {
+      }
+    }
+  }
+}
+
